@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+
+  div 
+    each val in messages
+      h3= val.user
+      p= val.text
+      p= val.added
+  a(href="/new") Write a new message

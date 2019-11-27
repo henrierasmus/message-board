@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    form(action="/new" method="POST")
+        h3 New Message
+        input(type="text" placeholder="Your Name" name="userName")
+        input(type="text" placeholder="Message" name="messageText")
+        button Post
